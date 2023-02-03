@@ -40,7 +40,8 @@ class SecondFragment : Fragment() {
                 call: Call<OneUserResponse>,
                 response: Response<OneUserResponse>
             ) {
-                editText.setText(response.body()?.data?.first_name)
+
+                //editText.setText(response.body()?.data?.first_name)
             }
 
             override fun onFailure(call: Call<OneUserResponse>, t: Throwable) {
